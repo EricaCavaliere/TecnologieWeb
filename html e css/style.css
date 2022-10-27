@@ -3,6 +3,7 @@
     margin: 0em;
 }
 
+/*variabili colori*/
 :root{
     --bgcolor: #0365AE;
     --txtcolor: #fff;
@@ -23,44 +24,43 @@ html,body{
     background-color: var(--bgcolor);
 }
 html{
-    background-image: url(''); /*controllare grandezza immagine*/
-    background-size: contain; /*l'immagine si zumma da sola per contenere tutto con questo comando;*/
+    background-image: url(''); /*controllare grandezza immagine -- bisogna inserire il percorso della immagine che caricherà prossimamente la prof perchè quella attuale per lo sfondo pesa più di 1 MB e questo non è accettabile per un sito*/
+    background-size: contain; /*l'immagine si "zumma" da sola per contenere tutto sullo schermo usando il comando - contain*/
 }
-/*header*/
+body{
+    max-width: 1024px;
+    border: 1px solid #000;
+}
+
 header{
     color: var(--txtcolor);
     text-align: center;
     padding: 1.0em;
     padding-top: 0.7em;
 }
-/*header h1{}*/
+header h1{}
 header h2{
     font-size: 1.8em;
     padding: 0.5;
     margin-top: 0.3em;
 }
 
-/*breadcrumb*/
-
-body{
-    max-width: 1024px;
-    border: 1px solid #000;
-}
-main{
-    background-color: var(--contentbgcolor);
-}
-footer{
+#breadcrumb{
     background-color: var(--breadcolor);
     color: var(--txtcolor);
+    font-size: 1.1em;
+    padding: 0.5em 0em 0.5em 1em;
+    border: 1px solid #000;/*quando ci sono un sacco di colori, mettere un bordino di pixel nero aiuta ad un primo impatte visivo*/
 }
-aside h2{
-    background-color: var(--newscolor);
+#breadcrumb a:link{
+    color: var(--linkcolor);
 }
-aside{
-    float: right;
-    width: 20%;
+#breadcrumb a:visited{
+    color: var(--visitedcolor)
 }
+
 #menu{
+    background-color: var(--bgcolor);
     float:left;
     width: 25%;
     font-size: 1.3em;
@@ -72,16 +72,24 @@ aside{
 #menu a:visited{
     color: var(--visitedcolor)
 }
-#breadcrumb{
-    background-color: var(--breadcolor);
-    color: #fff;
-    font-size: 1.1em;
-    padding: 0.5em 0em 0.5em 1em;
-    border: 1px solid #000;/*quando ci sono un sacco di colori, mettere un bordino di pixel nero aiuta ad un primo impatte visivo*/
-
-}
 
 #menu ul{
     list-style-type: none;
 }
-/*fare copia e incolla dal menu per creare lo stile per i link del breadcrumb*/
+
+aside{
+    float: right;
+    width: 20%;
+}
+aside h2{
+    background-color: var(--newscolor);
+}
+
+main{
+    background-color: var(--contentbgcolor);
+}
+
+footer{
+    background-color: var(--breadcolor);
+    color: var(--txtcolor);
+}
