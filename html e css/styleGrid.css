@@ -1,0 +1,27 @@
+/*compito, togliere i float e i margin e definire i grid
+il problema viene con aside
+
+copio tutto da style
+*/
+
+#homepage{
+display:grid;
+grid-template: 1fr 3fr 1fr;
+grid-template-areas:
+    "h h h"
+    "b b b"
+    "m c n"
+    "f f f";
+}
+
+body{
+    display: grid;
+    grid-template: 1fr 4fr;
+    grid-template-areas: 
+    "h h"
+    "b b"
+    "m c"
+    "f f";
+}
+
+/*provare a gestire l'aside con il float mantenendo il grid (per casa)*/

@@ -1,0 +1,35 @@
+/*copia e incolla da style.css
+
+tutti i colori si tolgono perchè si stampa in bianco e nero.
+
+nel html, body font-size:12 pt; font-family: "Times New Roman", serif;
+
+html si toglie
+
+body si toglie
+
+header si tiene text-align: center; padding: 1.0em 0em 1.0em 0em; margin: 0.5em; margin-bottom:0.5;
+
+*/
+header h1{
+    content: url("images/logo_fipav.svg");
+    line-height: 1.5em;
+    font-size: 6em;
+    /*le ultime due righe vanno bene o no?*/
+}
+
+header h2{
+    font-size: 1.1em;
+    padding: 0.5em;
+    margin-top: 0.3em;
+}
+
+/*
+#breadcrumb si tolgono i colori e le altre versioni create (es: hover) si tolgono
+
+il menu si toglie ... forse dysplay: none; ???
+
+breking new rimangono come sono ma si tolglie il colore
+
+
+*/
