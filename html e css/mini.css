@@ -1,14 +1,3 @@
-/*
-cosa copiare da css in modo completo:
-header h1{}
-
-modifiche:
-
----
-In realtà non serve copiare, perchè siu schermi piccoli, vengono applicati sia style.css sia mini.css per i media definiti
-
-*/
-
 header{
     /*il resto mantengo da css... si toglie anche background-size*/
     background: none;

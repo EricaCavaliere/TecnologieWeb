@@ -11,11 +11,46 @@ body si toglie
 header si tiene text-align: center; padding: 1.0em 0em 1.0em 0em; margin: 0.5em; margin-bottom:0.5;
 
 */
+
+/*
+#breadcrumb si tolgono i colori e le altre versioni create (es: hover) si tolgono
+
+il menu si toglie ... forse dysplay: none; ???
+
+breking news rimangono come sono ma si toglie il colore
+
+-----------------------------------------------------------------------------
+*/
+
+* {
+	padding: 0em;
+	margin: 0em;
+}
+
+html, body{
+    font-size: 12pt;
+    font-family: "Times New Roman", serif;
+	line-height: 1.5em;
+	margin: auto;
+}
+
+/*
+==============
+SEZIONE HEADER
+==============
+*/
+
+header{
+	text-align: center;
+    padding: 1.0em 0em 1.0em 0em;
+    margin-top: 0.5em;
+    margin-bottom:0.5;
+}
+
 header h1{
     content: url("images/logo_fipav.svg");
     line-height: 1.5em;
     font-size: 6em;
-    /*le ultime due righe vanno bene o no?*/
 }
 
 header h2{
@@ -25,11 +60,122 @@ header h2{
 }
 
 /*
-#breadcrumb si tolgono i colori e le altre versioni create (es: hover) si tolgono
-
-il menu si toglie ... forse dysplay: none; ???
-
-breking new rimangono come sono ma si tolglie il colore
-
-
+==============
+SEZIONE BREADCRUMB
+==============
 */
+
+#breadcrumb{
+	font-size: 1.1em;
+	padding: 0.5em 0em 0.5em 1em;
+}
+
+/*
+==============
+SEZIONE MENU
+==============
+*/
+
+#menu{
+	display: none;
+}
+
+/*
+==============
+SEZIONE NEWS
+==============
+*/
+
+aside{
+	float:  right;
+	width:  20%;
+	padding: 0.5em;
+	margin-top: 1.0em;
+	margin-right: 2%;
+	margin-left: 3%;
+}
+
+aside h2 {
+	font-size: 1.2em;
+	padding: 0.2em;
+}
+
+aside dl dd {
+	margin-left: 1.5em;
+}
+
+aside dt {
+	margin-left: 0.8em;
+	font-weight: bold;
+}
+
+/*
+==============
+SEZIONE CONTENUTO
+==============
+*/
+
+main{
+    text-align: justify;
+	width: auto;
+}
+
+main h1, h2{
+    text-align: center;
+    padding: 0.5em;
+}
+
+main>dl{
+    width: 95%;
+    margin: auto;
+}
+
+#giocatori>dt{
+    font-size: 1.1em;
+    padding: 0.5em;
+    margin-top: 0.7em;
+}
+
+#giocatori>dd{
+    border-top: none;
+    padding:0.5em;
+}
+
+#giocatori>dd img{
+    float: left;
+    width: 20%;
+}
+
+#giocatori>dd dl{
+    margin-left: 25%;
+}
+
+.giocatore dt{
+    float: left;
+    font-weight: bold;
+    padding-right: 0.5em;
+}
+
+.giocatore dt::after{
+    content: ": ";
+}
+
+dt.riconoscimenti{
+    float: none;
+}
+
+/*
+==============
+SEZIONE FOOTER
+==============
+*/
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    display: inline;
+    font-style: italic;
+    font-size: 0.8em;
+}
